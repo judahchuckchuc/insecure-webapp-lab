@@ -119,11 +119,7 @@ This app is **intentionally insecure**. It’s built for **educational use only*
 
 ## ✍️ Author
 
-Judah Lotto Madilola — [github.com/YOUR\_USERNAME](https://github.com/YOUR_USERNAME)
+Judah Lotto Madilola — [github.com/judahchuckchuck](https://github.com/judahchuckchuck)
 
-```
 
----
-
-Let me know if you'd like me to customize the README further (add screenshots, demo GIFs, or your GitHub profile link). Or should I bundle everything into a `.zip` for easy upload?
 ```
