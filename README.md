@@ -1,3 +1,6 @@
+
+
+````markdown
 # 🧪 Insecure WebApp Lab
 
 This is a deliberately vulnerable PHP web application built for **learning**, **testing**, and **showcasing** common web vulnerabilities. It's a great project for anyone exploring both **web development** and **cybersecurity**.
@@ -40,33 +43,39 @@ This app demonstrates:
 1. Install PHP in Termux:
    ```bash
    pkg install php
+````
 
-2 Navigate to the folder:
+2. Navigate to the folder:
 
-bash
-cd insecure-webapp-lab
+   ```bash
+   cd insecure-webapp-lab
+   ```
 
-3 Start a local server:
+3. Start a local server:
 
-bash
-php -S 127.0.0.1:8080
+   ```bash
+   php -S 127.0.0.1:8080
+   ```
 
-4 Visit http://127.0.0.1:8080 in your browser.
+4. Visit [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser.
 
-Option 2: Using XAMPP (Windows/Linux/Mac)
-Download and install XAMPP
 
-Copy the project folder (insecure-webapp-lab) to your htdocs directory
 
-Start Apache and MySQL from XAMPP Control Panel
+### Option 2: Using XAMPP (Windows/Linux/Mac)
 
-Open your browser and go to:
-http://localhost/insecure-webapp-lab
+1. Download and install [XAMPP](https://www.apachefriends.org/)
+2. Copy the project folder (`insecure-webapp-lab`) to your `htdocs` directory
+3. Start Apache and MySQL from XAMPP Control Panel
+4. Open your browser and go to:
+   [http://localhost/insecure-webapp-lab](http://localhost/insecure-webapp-lab)
 
-🧱 Database Setup
-Create a database called vulnerable_lab and run the following SQL:
 
-sql
+
+## 🧱 Database Setup
+
+Create a database called `vulnerable_lab` and run the following SQL:
+
+```sql
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(50) NOT NULL UNIQUE,
@@ -78,10 +87,13 @@ CREATE TABLE comments (
   name VARCHAR(50),
   comment TEXT
 );
+```
 
-📁 Folder Structure
-pgsql
-Copy code
+
+
+## 📁 Folder Structure
+
+```
 insecure-webapp-lab/
 ├── index.php
 ├── login.php
@@ -95,3 +107,23 @@ insecure-webapp-lab/
 ├── style.css
 ├── uploads/      ← Folder for uploaded files
 └── README.md
+```
+
+
+
+## 🛡️ Disclaimer
+
+This app is **intentionally insecure**. It’s built for **educational use only**. Do not deploy this on any public or production server.
+
+
+
+## ✍️ Author
+
+Judah Lotto Madilola — [github.com/YOUR\_USERNAME](https://github.com/YOUR_USERNAME)
+
+```
+
+---
+
+Let me know if you'd like me to customize the README further (add screenshots, demo GIFs, or your GitHub profile link). Or should I bundle everything into a `.zip` for easy upload?
+```
