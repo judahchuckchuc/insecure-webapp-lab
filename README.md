@@ -40,3 +40,58 @@ This app demonstrates:
 1. Install PHP in Termux:
    ```bash
    pkg install php
+
+2 Navigate to the folder:
+
+bash
+cd insecure-webapp-lab
+
+3 Start a local server:
+
+bash
+php -S 127.0.0.1:8080
+
+4 Visit http://127.0.0.1:8080 in your browser.
+
+Option 2: Using XAMPP (Windows/Linux/Mac)
+Download and install XAMPP
+
+Copy the project folder (insecure-webapp-lab) to your htdocs directory
+
+Start Apache and MySQL from XAMPP Control Panel
+
+Open your browser and go to:
+http://localhost/insecure-webapp-lab
+
+🧱 Database Setup
+Create a database called vulnerable_lab and run the following SQL:
+
+sql
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE comments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50),
+  comment TEXT
+);
+
+📁 Folder Structure
+pgsql
+Copy code
+insecure-webapp-lab/
+├── index.php
+├── login.php
+├── register.php
+├── dashboard.php
+├── comment.php
+├── upload.php
+├── logout.php
+├── csrf.php
+├── db.php
+├── style.css
+├── uploads/      ← Folder for uploaded files
+└── README.md
